@@ -1,0 +1,693 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Footer styles */
+.footer {
+    background-color:#1E3A8A; /* Dark background */
+    color: #6a90fa; /* White text */
+    padding: 40px 20px;
+    width: 1530px;
+    margin-top: 0px;
+  }
+  
+  .footer .container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+  
+  }
+  
+  .footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-col {
+    flex: 1 1 20%; /* Each column takes 20% of the width */
+    margin: 10px;
+    min-width: 200px; /* Ensure minimum width for small screens */
+  }
+  
+  .footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: 2px solid #6a90fa; /* Underline for section headings */
+    display: inline-block;
+  }
+  
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-col ul li {
+    margin: 10px 0;
+  }
+  
+  .footer-col ul li a {
+    color: #6a90fa; /* Light gray links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-col ul li a:hover {
+    color: #f6f3f3; /* Change link color on hover */
+  }
+  
+  .social-links a {
+    margin: 0 10px;
+    color: #020202;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #fff;
+  }
+  
+  .copyright {
+    text-align: center;
+    background-color: #222;
+    color: #bbb;
+    padding: 10px 0;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  .copyright p {
+    margin: 0;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .footer .row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-col {
+      flex: 1 1 100%; /* Full width for smaller screens */
+      text-align: center;
+    }
+  
+    .social-links a {
+      margin: 5px;
+    }
+  }
+  .navbar{
+    margin: 0px;
+    padding: 0px;
+  }
+  .cont{
+    display: flex;
+   margin-left: 35px;
+   margin-right: 25px;
+   justify-content: space-between;
+  }
+  .b1{
+    color:white;
+    background-color:rgb(44, 105, 228);
+    padding: 10px 20px;
+    border-radius: 9px;
+    margin: 0;
+    cursor: pointer;
+    border: none;
+    
+  }
+  .b2{
+    color: whitesmoke;
+    background-color: rgb(67, 67, 67);
+    padding: 10 px 20px;
+    border-radius: 9px;
+    margin: 0;
+  cursor: pointer;
+  border: none;
+  }
+  .b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    
+  
+  }
+  .b1:hover{
+    background-color: rgb(11, 70, 248);
+  }
+    
+  .b2:hover{
+    background-color: rgb(42, 41, 41);
+  }
+  .card{
+    width: 900px;
+    margin-left: 350px;
+    
+  }
+  .a{
+    margin-left: 350px;
+  }
+  /* .d{
+    display: flex;
+    width: 900px;
+    margin-left: 350px;
+    justify-content: space-between;
+  } */
+   .history-card{
+    display: flex;
+    justify-content: space-between;
+   }
+   .s:hover{
+  background-color: white ;
+   }
+   .g{
+    color: white;
+   }
+  .g:hover{
+    color: white;
+  }
+
+  .signup{
+    background-color: #22C55E; /* Green color */
+    color: white;
+    font-size: 16px;
+    padding: 8px 20px; /* Padding for button size */
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-right: 10px;
+  }
+  .signup:hover {
+    background-color: #16A34A; /* Darker green on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  .signup:focus {
+    outline: none; /* Remove outline on focus */
+    box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.5); /* Green glow effect */
+  }
+
+  .login{
+    background-color: #22C55E; /* Green color */
+    color: white;
+    font-size: 16px;
+    padding: 8px 20px; /* Padding for button size */
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  .login:hover {
+    background-color: #16A34A; /* Darker green on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  .login:focus {
+    outline: none; /* Remove outline on focus */
+    box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.5); /* Green glow effect */
+  }
+
+  /* first page css */
+.pl{
+  background-color:white;
+  border-radius:7px ;
+  width: 300px;
+}
+.get{
+  border-radius:7px ;
+  width: 140px;
+  height: 39px;
+  justify-content: center;
+  align-items: center;
+  margin:2px ;
+  padding-top: 6px;
+  background-color: rgb(12, 75, 200);
+}
+.already{
+  color: #d62626;
+}
+.access{
+  font-size: 30px;
+}
+.show{
+  margin-left: 150px;
+margin-bottom: 10px;
+  padding-top: 100px;
+
+}
+.flex{
+  display: flex;
+  margin-right: 0;
+  margin-left: 1300px;
+}
+.call{
+  font-weight: bold;
+ font-size: 70px;
+ font-family:fantasy;
+}
+.work{
+ font-size: 20px;
+  width: 400px;
+  border-radius: 5px;
+  height: 110px;
+ margin:20px;
+
+ background-color: rgba(169, 169, 169, 0.816);
+  justify-content: center;
+  align-items: center;
+}
+.process{
+padding-top: 20px;
+margin: 50px;
+}
+.mp{
+  display: flex;
+}
+h3,.xb{
+  margin: 15px;
+}
+.back{
+  background-image: url('./src/assets/pitch.jpeg');
+  background-size: cover;
+
+
+}
+
+h2{
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/* ABOUT US PAGE CSS */
+.about-us-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #E8EAF6 ;
+}
+
+.about-us-header h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1e3a8a ;
+  font-size:90px;
+  font-weight: 500;
+}
+
+.about-us-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-us-content {
+  margin-bottom: 30px;
+}
+
+.about-us-content h2 {
+  color: #0056b3;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.about-us-content p {
+  color: #555;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.about-us-footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+/* OUR SERVICES CSS  */
+
+.services-container {
+  padding: 50px 20px;
+  background-color: #E8EAF6; 
+  text-align: center;
+}
+
+.services-heading {
+  font-size:90px;
+  font-weight: 500;
+  color: #1e3a8a ; /* Rich blue */
+  margin-bottom: 40px;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.service-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.service-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+.service-description {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* HOW IT WORKS PAGE CSS */
+
+.how-it-works-container {
+  padding: 60px 20px;
+  background-color: #E8EAF6;
+  text-align: center;
+}
+
+.how-it-works-heading {
+  font-size: 90px;
+  font-weight:500;
+  color: #1e3a8a; /* Rich blue */
+  margin-bottom: 40px;
+}
+
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.step-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+
+.step-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #1e3a8a; /* You can customize this color */
+}
+
+.step-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+.step-description {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* REPAYMENT OPTIONS PAGE CSS */
+
+.repayment-options-container {
+  padding: 60px 20px;
+  background-color: #E8EAF6;
+  text-align: center;
+}
+
+.repayment-options-heading {
+  font-size: 90px;
+  font-weight:500;
+  color: #1e3a8a; /* Rich blue */
+  margin-bottom: 40px;
+}
+
+.repayment-methods-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.repayment-method-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+
+.method-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #1e3a8a; /* You can customize this color */
+}
+
+.method-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+.method-description {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* FAQ PAGE CSS */
+
+.faq-container {
+  padding: 60px 20px;
+  background-color: #E8EAF6; 
+  text-align: center;
+}
+
+.faq-heading {
+  font-size: 90px;
+  font-weight: 500;
+  color: #1e3a8a; /* Rich blue */
+  margin-bottom: 40px;
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-item {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-5px);
+}
+
+.faq-question {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+.faq-answer {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.heading{
+  font-size: 90px;
+  font-weight: 500;
+  color:#1e3a8a;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  }
+  .w{
+    margin-left: 1111px;
+  }
+ .icon{
+  font-size: 1200px;
+ }
+ .sub{
+  color:#1e3a8a
+ }
+ .grd{
+  background-color: #E8EAF6;
+ }
+
+
+
+ /* Grid container for overall layout */
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8fafc;
+  padding: 20px;
+}
+
+/* Form container styling */
+.container {
+  background:#E8EAF6 ;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px 30px;
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Heading styling */
+.heading {
+  font-size: 90px;
+  font-weight: 500;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Label styling */
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  color: #334155;
+  margin-bottom: 8px;
+}
+
+/* Input and textarea styling */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: 'Arial', sans-serif;
+  color: #334155;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #1e3a8a;
+  outline: none;
+}
+
+/* Textarea height */
+.form-group textarea {
+  resize: none;
+  height: 120px;
+}
+
+/* Error message styling */
+.error {
+  font-size: 0.875rem;
+  color: #dc2626;
+  margin-top: 5px;
+}
+
+/* Button styling */
+button[type="submit"] {
+  background-color: #1e3a8a;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #16447e;
+}
+
+/* Success message styling */
+.success {
+  font-size: 1rem;
+  color: #16a34a;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* AFTER PAGE CSS */
+
+.dashboard-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-content {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #1e3a8a;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #64748b;
+  color: white;
+}

@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 const Dashboard = () => {
+  const navigate = useNavigate(); // Initialize navigate
 
   // Example user data (replace this with real data from your API or state management)
   const userName = "John Doe"; // Replace with actual user name from context/store
@@ -10,10 +12,15 @@ const Dashboard = () => {
     "Browsed loan offers",
   ]; // Replace with actual data
 
+  // Handle navigation function
+  const handleNavigation = (path) => {
+    navigate(path);
+  };
+
   return (
     <div className="dashboard-container">
       <header className="dashboard-header">
-        <h1>Welcome, {userName}!</h1>
+        <h1 className="sub">Welcome, {userName}!</h1>
         <p>Your lending platform dashboard</p>
       </header>
 
@@ -22,7 +29,7 @@ const Dashboard = () => {
           <h2>Quick Links</h2>
           <button
             className="btn btn-primary"
-            onClick={() => handleNavigation("/apply-loan")}
+            onClick={() => handleNavigation("/loan-form")}
           >
             Apply for a Loan
           </button>

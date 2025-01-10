@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Footer styles */
+/* FOOTER CSS */
 .footer {
-    background-color:#1E3A8A; /* Dark background */
-    color: #6a90fa; /* White text */
+    background-color:#1E3A8A; 
+    color: #6a90fa; 
     padding: 40px 20px;
     width: 1530px;
     margin-top: 0px;
@@ -34,7 +34,7 @@
     margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: 600;
-    border-bottom: 2px solid #6a90fa; /* Underline for section headings */
+    border-bottom: 2px solid #6a90fa; 
     display: inline-block;
   }
   
@@ -48,18 +48,18 @@
   }
   
   .footer-col ul li a {
-    color: #6a90fa; /* Light gray links */
+    color: #6a90fa;
     text-decoration: none;
     transition: color 0.3s ease;
   }
   
   .footer-col ul li a:hover {
-    color: #f6f3f3; /* Change link color on hover */
+    color: #f6f3f3;
   }
   
   .social-links a {
     margin: 0 10px;
-    color: #020202;
+    color: #6a90fa;
     font-size: 20px;
     transition: color 0.3s ease;
   }
@@ -101,74 +101,8 @@
     margin: 0px;
     padding: 0px;
   }
-  .cont{
-    display: flex;
-   margin-left: 35px;
-   margin-right: 25px;
-   justify-content: space-between;
-  }
-  .b1{
-    color:white;
-    background-color:rgb(44, 105, 228);
-    padding: 10px 20px;
-    border-radius: 9px;
-    margin: 0;
-    cursor: pointer;
-    border: none;
-    
-  }
-  .b2{
-    color: whitesmoke;
-    background-color: rgb(67, 67, 67);
-    padding: 10 px 20px;
-    border-radius: 9px;
-    margin: 0;
-  cursor: pointer;
-  border: none;
-  }
-  .b{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    
-  
-  }
-  .b1:hover{
-    background-color: rgb(11, 70, 248);
-  }
-    
-  .b2:hover{
-    background-color: rgb(42, 41, 41);
-  }
-  .card{
-    width: 900px;
-    margin-left: 350px;
-    
-  }
-  .a{
-    margin-left: 350px;
-  }
-  /* .d{
-    display: flex;
-    width: 900px;
-    margin-left: 350px;
-    justify-content: space-between;
-  } */
-   .history-card{
-    display: flex;
-    justify-content: space-between;
-   }
-   .s:hover{
-  background-color: white ;
-   }
-   .g{
-    color: white;
-   }
-  .g:hover{
-    color: white;
-  }
 
+/* SIGN UP BUTTON CSS */
   .signup{
     background-color: #22C55E; /* Green color */
     color: white;
@@ -190,6 +124,7 @@
     box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.5); /* Green glow effect */
   }
 
+  /* LOGIN BUTTON CSS */
   .login{
     background-color: #22C55E; /* Green color */
     color: white;
@@ -210,22 +145,8 @@
     box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.5); /* Green glow effect */
   }
 
-  /* first page css */
-.pl{
-  background-color:white;
-  border-radius:7px ;
-  width: 300px;
-}
-.get{
-  border-radius:7px ;
-  width: 140px;
-  height: 39px;
-  justify-content: center;
-  align-items: center;
-  margin:2px ;
-  padding-top: 6px;
-  background-color: rgb(12, 75, 200);
-}
+  /* HOME PAGE CSS */
+
 .already{
   color: #d62626;
 }
@@ -234,7 +155,6 @@
 }
 .show{
   margin-left: 150px;
-margin-bottom: 10px;
   padding-top: 100px;
 
 }
@@ -254,8 +174,7 @@ margin-bottom: 10px;
   border-radius: 5px;
   height: 110px;
  margin:20px;
-
- background-color: rgba(169, 169, 169, 0.816);
+ background-color: rgba(228, 221, 221, 0.593);
   justify-content: center;
   align-items: center;
 }
@@ -272,13 +191,9 @@ h3,.xb{
 .back{
   background-image: url('./src/assets/pitch.jpeg');
   background-size: cover;
-
-
 }
 
-h2{
-font-family:Georgia, 'Times New Roman', Times, serif;
-}
+
 
 /* ABOUT US PAGE CSS */
 .about-us-container {
@@ -540,7 +455,7 @@ font-family:Georgia, 'Times New Roman', Times, serif;
   background-color: #E8EAF6;
  }
 
-
+/* CONTACT US CSS */
 
  /* Grid container for overall layout */
 .contact{
@@ -673,8 +588,7 @@ button[type="submit"]:hover {
 
 .btn {
   display: block;
-  width: 100%;
-  margin: 10px 0;
+  margin: 3px;
   padding: 10px;
   border: none;
   border-radius: 4px;

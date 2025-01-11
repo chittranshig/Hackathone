@@ -78,29 +78,24 @@ const userSlice = createSlice({
 export const register = (data) => async (dispatch) => {
   dispatch(userSlice.actions.registerRequest());
   try {
-    // Debugging FormData content
-    console.log("FormData Entries:", [...data.entries()]);
-
     const response = await axios.post(
       "http://localhost:8080/api/v1/user/register",
       data,
       {
-        withCredentials: true, // Ensure cookies are included
+        withCredentials: true,
+        headers: { "Content-Type": "multipart/form-data" },
       }
     );
-
     dispatch(userSlice.actions.registerSuccess(response.data));
-    toast.success(response.data.message || "Registration successful!");
+    toast.success(response.data.message);
     dispatch(userSlice.actions.clearAllErrors());
   } catch (error) {
-    const errorMessage =
-      error.response?.data?.message || "Something went wrong. Please try again!";
     dispatch(userSlice.actions.registerFailed());
-    toast.error(errorMessage);
-    console.error("Registration Error:", error); // Debugging
+    toast.error(error.response.data.message);
     dispatch(userSlice.actions.clearAllErrors());
   }
 };
+
 
 export const login = (data) => async (dispatch) => {
   dispatch(userSlice.actions.loginRequest());

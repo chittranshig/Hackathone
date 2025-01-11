@@ -1,20 +1,17 @@
-import React,{useState} from "react";
+import React from "react";
 
 const Home = () => {
   return (
     <>
-
       <div className='back'>
         <div className='show'>
           <div className=' call text-primary '>Need WORKING CAPITAL?</div>
-
           <div className=' fs- text-success access'>ACCESS CAPITAL FOR YOUR BUSSINESS IN 24-48 HOURS</div>
           <div>
           </div>
           <div className='already'>Already have an account?
-              <a href='/login'>Sign in</a>
+            <a href='/login'>Sign in</a>
           </div>
-
         </div>
         <div className='process' >
           <h2>HOW IT WORKS</h2>
@@ -33,12 +30,8 @@ const Home = () => {
               </div>
             </div>
           </div>
-
         </div>
-
       </div>
-
-
     </>
   );
 };
